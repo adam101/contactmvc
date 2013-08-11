@@ -1,0 +1,63 @@
+// Place all the styles related to the Contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+    margin: 0;
+}
+
+#header {
+    width: 100%;
+    height: 50px;
+    background-color: gray;
+    min-width: 400px;
+}
+
+#new_contact_button {
+    width: 140px;
+    height: 40px;
+    margin: 5px;
+}
+
+#new_contact_div {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#new_contact_form {
+    float: center;
+    display: inline-block;
+    width: 340px;
+}
+
+.contact {
+    float: left;
+    width: 340px;
+    box-shadow: 3px 3px 10px 6px #ccc;
+}
+
+
+.small_label {
+    margin-left: 10px;
+    font-size: 14px;
+    float:left;
+}
+
+.text {
+    width: 140px;
+    float: right;
+}
+
+.contact_table {
+    width: 100%;
+}
+
+caption {
+    background: gray;
+}
+
+.contact_table tr td {
+    text-align: right;
+}

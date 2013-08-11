@@ -1,0 +1,17 @@
+<div id="header">
+    <%= button_to "New contact", new_contact_path, method: :get, id: :new_contact_button, remote: true %>
+</div>
+<div id="new_contact_div"></div>
+
+<div id="contact_list">
+    
+</div>
+
+<div class="contact_list">
+    <% if not @contacts.nil? then %>
+        <% @contacts.each do |contact| %>
+            <%= render partial: "show_contact", locals: {contact: contact} %>
+        <% end %>
+    <% end %>
+</div>
+

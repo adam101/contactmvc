@@ -1,0 +1,39 @@
+<div class="contact">
+    <%= form_tag("/contacts", :remote => true) do %>
+        <table class="contact_table">
+            <caption>HEADER</caption>
+            <tbody>
+                <tr>
+                    <td rowspan="0">IMAGE HERE</td>
+                </tr>
+                <tr>
+                    <td>
+                        <%= label_tag :name, nil, class: "small_label" %> <%= text_field_tag :name, "", class: "text" %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%= label_tag :age, nil, class: "small_label" %> <%= number_field_tag :age, "", in: 1...99, class: "text" %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%= label_tag :address, nil, class: "small_label" %> <%= text_field_tag :address, "", class: "text" %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%= label_tag :phone, nil, class: "small_label" %> <%= text_field_tag :phone, "", class: "text" %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <%= label_tag :email, nil, class: "small_label" %> <%= text_field_tag :email, "", class: "text" %>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <%= submit_tag "Add" %>
+        <%= button_to_function "Cancel", "hideNewContactForm();" %>
+    <% end %>
+</div>
