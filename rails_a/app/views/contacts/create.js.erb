@@ -1,0 +1,6 @@
+var $html = $('<div class="contact span4" data-id="<%= @contact.id %>"></div>')
+              .append('<%= j render partial: 'contacts/item', locals: { contact: @contact } %>')
+
+$('div.contacts').prepend($html)
+$('div.contact.new').remove()
+

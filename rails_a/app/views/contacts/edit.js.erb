@@ -1,0 +1,5 @@
+$('div.contact[data-id="<%= @contact.id %>"]')
+  .empty()
+  .append('<%= j render partial: 'contacts/form', locals: { contact: @contact } %>')
+  .addClass('edit');
+

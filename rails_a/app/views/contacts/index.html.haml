@@ -1,0 +1,6 @@
+.contacts
+  - @contacts.each do |contact|
+    .contact.span4{ data: { id: contact.id } }
+      = render partial: 'contacts/item', locals: { contact: contact }
+  .clearfix
+

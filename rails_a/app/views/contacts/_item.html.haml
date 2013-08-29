@@ -1,0 +1,13 @@
+- picture_url = contact.picture_url || "http://lorempixel.com/120/120/people"
+
+.actions
+  = link_to(edit_contact_path(contact), remote: true) do
+    %i.icon-edit
+  = link_to(contact_path(contact), remote: true, method: 'delete') do
+    %i.icon-remove
+
+= image_tag(picture_url, class: 'img-circle')
+%h4.name= contact.name
+%span.phone= contact.phone
+%span.email= contact.email
+

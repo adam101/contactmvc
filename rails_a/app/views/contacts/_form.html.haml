@@ -1,0 +1,10 @@
+= form_for @contact, remote: true do |f|
+  .image-placeholder
+    %small Click to upload image
+  = f.text_field :name
+  = f.text_field :phone
+  = f.text_field :email
+
+  %button.btn.btn-default{ type: 'submit' } Submit
+  %button.btn.btn-danger.pull-right.cancel Cancel
+
